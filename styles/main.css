@@ -1,0 +1,280 @@
+/* ==================================
+GLOBAL
+================================== */
+
+html,
+body,
+.stApp{
+background:#f8fafc;
+color:#111827;
+font-family:Inter,sans-serif;
+height:100%;
+overflow:hidden !important;
+}
+
+.block-container{
+max-width:1450px;
+padding-top:18px !important;
+padding-bottom:120px !important;
+}
+
+
+/* ==================================
+SIDEBAR
+================================== */
+
+section[data-testid="stSidebar"]{
+background:linear-gradient(
+180deg,
+#06101f 0%,
+#0b1730 100%
+);
+border-right:1px solid rgba(255,255,255,.06);
+padding-top:.35rem;
+}
+
+section[data-testid="stSidebar"] *{
+color:white;
+}
+
+section[data-testid="stSidebar"] .block-container{
+padding-top:0.5rem !important;
+padding-bottom:0.5rem !important;
+}
+
+/* Sidebar buttons */
+section[data-testid="stSidebar"] .stButton > button{
+width:100%;
+border-radius:16px;
+padding:.9rem 1rem;
+font-size:15px;
+font-weight:700;
+text-align:left;
+
+background:rgba(255,255,255,.08)!important;
+color:white!important;
+
+border:1px solid rgba(255,255,255,.08);
+transition:.2s ease;
+}
+
+section[data-testid="stSidebar"] .stButton > button:hover{
+background:rgba(255,255,255,.16)!important;
+transform:translateY(-1px);
+}
+
+/* Sidebar dropdown FULL DARK */
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div{
+background:#000000 !important;
+color:#ffffff !important;
+border:1px solid #222 !important;
+border-radius:12px !important;
+min-height:42px;
+}
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] span{
+color:#ffffff !important;
+}
+
+section[data-testid="stSidebar"] ul{
+background:#000000 !important;
+}
+
+section[data-testid="stSidebar"] li{
+background:#000000 !important;
+color:#ffffff !important;
+}
+
+section[data-testid="stSidebar"] li:hover{
+background:#111111 !important;
+}
+
+
+/* ==================================
+HERO
+================================== */
+
+.hero{
+background:linear-gradient(
+135deg,
+#2457ff 0%,
+#6d32ff 100%
+);
+
+padding:1.2rem 1.4rem;
+border-radius:22px;
+color:white;
+
+margin-top:30px;
+margin-bottom:16px;
+
+box-shadow:
+0 18px 40px rgba(37,99,235,.18);
+}
+
+.hero-title{
+font-size:2rem;
+font-weight:800;
+}
+
+.hero-sub{
+font-size:1rem;
+margin-top:.35rem;
+opacity:.96;
+}
+
+.hero-mini{
+font-size:.92rem;
+margin-top:.45rem;
+opacity:.88;
+}
+
+
+/* ==================================
+BUTTONS
+================================== */
+
+.stButton > button{
+border-radius:16px;
+}
+
+
+/* ==================================
+KPI
+================================== */
+
+.kpi{
+background:white;
+border-radius:18px;
+padding:1rem;
+text-align:center;
+
+border:1px solid #e5e7eb;
+
+box-shadow:
+0 8px 24px rgba(0,0,0,.04);
+
+margin-bottom:1rem;
+}
+
+.kpi h3{
+margin:0;
+font-size:2rem;
+}
+
+
+/* ==================================
+CARD
+================================== */
+
+.card{
+background:white;
+border-radius:18px;
+padding:1rem;
+
+border:1px solid #e5e7eb;
+
+box-shadow:
+0 8px 24px rgba(0,0,0,.04);
+}
+
+
+/* ==================================
+CHAT MESSAGES
+================================== */
+
+[data-testid="stChatMessage"]{
+background:white;
+border-radius:18px;
+padding:.95rem;
+
+border:1px solid #e5e7eb;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.03);
+
+margin-bottom:.8rem;
+scroll-margin-bottom:120px;
+}
+
+
+/* ==================================
+FIXED HEADER SHELL
+================================== */
+
+.hero-sticky{
+position:fixed;
+top:0;
+left:340px;
+right:420px;
+z-index:999;
+background:#f8fafc;
+padding:0 0 10px 0;
+}
+
+
+/* ==================================
+CHAT ONLY SCROLLS
+================================== */
+
+.chat-region{
+position:fixed;
+top:300px;
+left:340px;
+right:420px;
+bottom:88px;
+
+overflow-y:auto;
+padding-right:8px;
+}
+
+
+/* ==================================
+CHAT SCROLL LEGACY
+================================== */
+
+.chat-scroll{
+height:62vh;
+overflow-y:auto;
+padding-right:8px;
+}
+
+
+/* ==================================
+FIXED CHAT INPUT
+================================== */
+
+[data-testid="stChatInput"]{
+position:fixed !important;
+bottom:18px;
+
+left:340px;
+right:420px;
+
+z-index:1000;
+
+background:#f8fafc;
+padding-top:8px;
+}
+
+
+/* ==================================
+SELECT
+================================== */
+
+div[data-baseweb="select"] > div{
+border-radius:14px !important;
+}
+
+
+/* ==================================
+HIDE STREAMLIT
+================================== */
+
+#MainMenu{
+visibility:hidden;
+}
+
+footer{
+visibility:hidden;
+}
