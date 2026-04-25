@@ -137,19 +137,7 @@ source venv/bin/activate
 ## 4. Install Dependencies
 
 ```bash
-pip install streamlit
-pip install faiss-cpu
-pip install sentence-transformers
-pip install pypdf
-pip install langchain
-pip install numpy
-pip install pandas
-```
-
-Or using requirements file:
-
-```bash
-pip install -r requirements.txt
+pip install streamlit faiss-cpu sentence-transformers pypdf langchain numpy pandas ollama
 ```
 
 ## 5. Install and Run Local LLM
@@ -401,3 +389,11 @@ streamlit run app.py
 ## Author
 
 Built by Sujath as an enterprise AI product from concept to execution.
+
+
+Short steps
+cd C:\knowledge-assistant\rag_systems
+python -m venv venv
+venv\Scripts\activate
+pip install streamlit faiss-cpu sentence-transformers pypdf langchain numpy pandas ollama
+python -m streamlit run app.py
